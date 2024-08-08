@@ -21,12 +21,6 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiJira />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDuckdb />
-      </Col>
     </Row>
   );
 }

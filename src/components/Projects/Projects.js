@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import oraiscan from "../../Assets/Projects/oraiscan.png";
+import oraidex from "../../Assets/Projects/oraidex.png";
+import orderbook from "../../Assets/Projects/orderbook.png";
+import owallet from "../../Assets/Projects/owallet.png";
+import homebase from "../../Assets/Projects/homebase.png";
 
 function Projects() {
   return (
@@ -23,10 +22,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={oraidex}
               isBlog={false}
               title="OraiDEX"
-              description="OraiDEX is a decentralized exchange (DEX) platform that operates within the Oraichain ecosystem. It provides users with the ability to trade, stake, and provide liquidity for various cryptocurrency assets."
+              description=""
               ghLink="https://github.com/oraichain/oraiswap-frontend"
               demoLink="https://oraidex.io/"
             />
@@ -34,21 +33,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="OraiScan"
-              description="OraiScan is a comprehensive blockchain explorer for the Oraichain network. It enables users to track and analyze transactions, view block details, and monitor wallet activities."
-              ghLink="https://github.com/oraichain/oraiscan-frontend"
-              demoLink="https://scan.orai.io/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
+              imgPath={owallet}
               isBlog={false}
               title="Owallet"
-              description="It is a digital wallet developed for the Oraichain ecosystem, allowing users to securely store, manage, and interact with ORAI tokens and other supported cryptocurrencies. OWallet provides features such as transaction management, staking, and integration with Oraichain’s decentralized applications (dApps), making it a versatile tool for users within the Oraichain network."
+              description=""
               ghLink="https://github.com/oraichain/owallet"
               demoLink="https://owallet.dev/"
             />
@@ -56,34 +44,43 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={orderbook}
               isBlog={false}
-              title="OraiDEX"
-              description="OraiDEX is a decentralized exchange (DEX) platform that operates within the Oraichain ecosystem. It provides users with the ability to trade, stake, and provide liquidity for various cryptocurrency assets."
-              ghLink="https://github.com/oraichain/oraiswap-frontend"
-              demoLink="https://oraidex.io/"
+              title="Orderbook"
+              description=""
+              ghLink="https://github.com/oraichain/orderbook-frontend"
+              demoLink="https://orderbook.oraidex.io/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={oraiscan}
               isBlog={false}
-              title="OraiScan"
-              description="OraiScan is a comprehensive blockchain explorer for the Oraichain network. It enables users to track and analyze transactions, view block details, and monitor wallet activities."
+              title="Oraiscan"
+              description=""
               ghLink="https://github.com/oraichain/oraiscan-frontend"
               demoLink="https://scan.orai.io/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={homebase}
               isBlog={false}
-              title="Owallet"
-              description="It is a digital wallet developed for the Oraichain ecosystem, allowing users to securely store, manage, and interact with ORAI tokens and other supported cryptocurrencies. OWallet provides features such as transaction management, staking, and integration with Oraichain’s decentralized applications (dApps), making it a versatile tool for users within the Oraichain network."
-              ghLink="https://github.com/oraichain/owallet"
-              demoLink="https://owallet.dev/"
+              title="Homebase"
+              description=""
+              ghLink="https://github.com/oraichain/"
+              demoLink="https://hub.orai.io/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={oraiscan}
+              isBlog={false}
+              title="OraiScan"
+              description=""
+              ghLink="https://github.com/oraichain/oraiscan-frontend"
+              demoLink="https://scan.orai.io/"
             />
           </Col>
         </Row>
